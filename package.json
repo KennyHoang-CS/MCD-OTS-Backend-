@@ -1,0 +1,20 @@
+{
+  "name": "mcdonalds-backend",
+  "version": "1.0.0",
+  "description": "handles user, menu items, and scores data",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Kenny Hoang",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.6.0"
+  }
+}
