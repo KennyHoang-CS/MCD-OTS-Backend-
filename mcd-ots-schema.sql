@@ -6,6 +6,7 @@ CREATE TABLE users (
 CREATE TABLE foodItems (
     id SERIAL PRIMARY KEY,
     name TEXT UNIQUE NOT NULL,
+    type TEXT NOT NULL,
     isComboItem BOOLEAN DEFAULT FALSE,
     comboItemNumber VARCHAR(5), 
     imageSrc TEXT 

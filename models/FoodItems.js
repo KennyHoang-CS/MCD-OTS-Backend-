@@ -16,6 +16,7 @@ class FoodItems {
         
         // create the string query. 
         let stringToQuery = `SELECT name, 
+                            type,
                             isComboItem AS is_combo_item,
                             comboItemNumber AS combo_item_number,
                             imageSrc
