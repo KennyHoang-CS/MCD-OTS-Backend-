@@ -1,0 +1,127 @@
+INSERT INTO mcvalue (name, isComboItem, comboItemNumber, imageSrc)
+VALUES 
+('McChicken',
+FALSE,
+'',
+'/images/McChicken.jpg'),
+('McDouble',
+FALSE,
+'',
+'/images/McDouble.jpg'),
+('4 Nuggets',
+FALSE,
+'',
+'/images/Chicken-McNuggets.jpg'),
+('McChkn Bis',
+FALSE,
+'',
+'/images/mcChknBis.jpg'),
+('Chkn McGrid',
+FALSE,
+'',
+'/images/chknMcGrid.jpg'),
+('Hashbrown',
+FALSE,
+'',
+'/images/hashbrown.jpg'),
+('Saus Burrito',
+TRUE,
+'',
+'/images/sausBurrito.jpg'),
+('Saus Muffin',
+TRUE,
+'',
+'/images/sausMuffin.jpg'),
+('Saus Biscuit',
+TRUE,
+'',
+'/images/sausBis.jpg'),
+('Saus McGrid',
+FALSE,
+'',
+'/images/Sausage-McGriddles.jpg'),
+('Fries',
+FALSE,
+'',
+'/images/fries.jpg'),
+('20 Nuggets',
+FALSE,
+'',
+'/images/Chicken-McNuggets.jpg');
+
+INSERT INTO salads (name, isComboItem, comboItemNumber, imageSrc)
+VALUES 
+('Ranch Salad',
+FALSE,
+'',
+'/images/ranch-salad.jpg'),
+('SW Salad',
+FALSE,
+'',
+'/images/southwest-salad.jpg'),
+('Side Salad',
+FALSE,
+'',
+'/images/side-salad.png');
+
+INSERT INTO happy_meals (name, imageSrc)
+VALUES 
+('HM Hambrg',
+'/images/h-mcdonalds-Hamburger.jpg'),
+('HM 4 Nuggets',
+'/images/h-mcdonalds-Chicken-McNuggets.jpg'),
+('HM 6 Nuggets',
+'/images/mcdonalds-Chicken-McNuggets-Mighty-Kids-Meals.jpg');
+
+INSERT INTO LSM (name, imageSrc)
+VALUES 
+('Classic Pack Big Mac',
+'/images/classic-pack-big-mac.jpg'),
+('BTS Meal',
+'/images/bts-meal.jpg'),
+('Travis-Scott Meal',
+'/images/travis-scott-meal.jpg'),
+('J Balvin Meal',
+'/images/j-balvin-mcdonalds-meal.jpg');
+
+INSERT INTO condiments (name, imageSrc)
+VALUES 
+('BBQ',
+'/images/bbq-sauce.jpg'),
+('Sweet Sour',
+'/images/sweet-sauce.jpg'),
+('Hot Must',
+'/images/t-hot-mustard-sauce.jpg'),
+('Pure Honey',
+'/images/pure-honey.jpg'),
+('Ranch',
+'/images/ranch-sauce.jpg'),
+('Buffalo',
+'/images/buffalo-sauce.jpg'),
+('Honey Must',
+'/images/honey-mustard.jpg'),
+('Sweet Chili',
+'/images/sweet-chili-sauce.jpg'),
+('Ketchup',
+'/images/ketchup.jpg'),
+('Mustard',
+'/images/mustard.jpg'),
+('Mayo',
+'/images/mayo-packet.jpg'),
+('Strawberry',
+'/images/strawberry-jam.jpg'),
+('Hot Picante',
+'/images/hot-picante.jpg'),
+('Creamer',
+'/images/creamer.jpg'),
+('Sugar',
+'/images/sugar-packet.jpg'),
+('Equal',
+'/images/equal-packet.jpg'),
+('Splenda',
+'/images/splenda-packet.jpg');
+
+
+
+
+

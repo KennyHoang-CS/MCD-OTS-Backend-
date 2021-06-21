@@ -3,13 +3,13 @@
 const express = require('express');
 const router = new express.Router(); 
 
-const FoodItems = require('../models/FoodItems');
+const FoodMenu = require('../models/FoodMenu');
 
-/** Routes for Food Items. */
+/** Routes for mcvalue items. */
 
 
 /** GET / => 
- *  { foodItems: [ { name, isComboItem, comboItemNumber, imageSrc }, ...]}
+ *  { items: [ { name, isComboItem, comboItemNumber, imageSrc }, ...]}
  * 
  * 
  *  Authorization required: none 
@@ -18,8 +18,8 @@ const FoodItems = require('../models/FoodItems');
 
 router.get('/', async function (req, res, next) {
     try {
-        const foodItems = await FoodItems.getAll();
-        return res.json({ foodItems });
+        const items = await FoodMenu.getAll('mcvalue');
+        return res.json({ items });
     } catch (err) {
         return next(err); 
     }
