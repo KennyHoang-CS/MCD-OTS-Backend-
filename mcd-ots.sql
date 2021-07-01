@@ -7,6 +7,7 @@ CREATE DATABASE mcd_ots;
 
 \i mcd-ots-schema.sql
 \i mcd-ots-breakfast.sql
+\i mcd-ots-customers.sql
 \i mcd-ots-dessert.sql
 \i mcd-ots-drinks.sql
 \i mcd-ots-lunch.sql

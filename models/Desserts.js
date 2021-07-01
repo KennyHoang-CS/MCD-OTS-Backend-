@@ -16,6 +16,7 @@ class Desserts {
         
         // create the string query. 
         let stringToQuery = `SELECT name, 
+                            sizeable, 
                             imageSrc
                     FROM ${menu}`;
 

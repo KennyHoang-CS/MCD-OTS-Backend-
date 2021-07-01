@@ -22,6 +22,10 @@ const happyMealRoutes = require('./routes/happy-meal');
 const lsmRoutes = require('./routes/lsm');
 const condiments = require('./routes/condiments');
 
+const customerRoutes = require('./routes/customers');
+const leaderboardRoutes = require('./routes/leaderboard');
+
+
 const app = express(); 
 
 app.use(cors());
@@ -42,5 +46,8 @@ app.use('/dessert-2', dessert2Routes);
 app.use('/happy-meal', happyMealRoutes);
 app.use('/lsm', lsmRoutes);
 app.use('/condiments', condiments);
+
+app.use('/customers', customerRoutes);
+app.use('/leaderboard', leaderboardRoutes);
 
 module.exports = app; 

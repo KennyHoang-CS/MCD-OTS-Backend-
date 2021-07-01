@@ -18,9 +18,12 @@ class FoodMenu {
         let stringToQuery = `SELECT name, 
                             isComboItem AS is_combo_item,
                             comboItemNumber AS combo_item_number,
+                            sizeable,
+                            type,
+                            notComboAble AS not_combo_able,
                             imageSrc
                     FROM ${menu}
-                    ORDER BY name`;
+                    ORDER BY combo_item_number`;
 
         // make the query to db. 
         const foodItemsResult = await db.query(stringToQuery);
