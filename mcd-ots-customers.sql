@@ -59,10 +59,3 @@ mac combo with a large diet coke. Lets end it with a medium 4d combo with a medi
 caramel sundae. Thanks.');
 
 
-INSERT INTO answers (id, name, count, drinkAlert)
-VALUES 
-(1, 'S Fries', 2, ''),
-(1, 'Big Mac', 1, ''),
-(1, 'Filet-o-Fish', 1, ''),
-(1, 'McChicken', 1, ''),
-(1, 'McDouble', 1, '');

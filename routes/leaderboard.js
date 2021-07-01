@@ -27,10 +27,7 @@ router.get('/', async function (req, res, next) {
 
 router.post('/new', async function (req, res, next) {
     try {
-        
-        //console.log(JSON.stringify(req.body));
-        //console.log(`username: `, req.body.data.username)
-    
+            
         const { username, time, formattedTime } = req.body.data; 
 
         console.log('user: ', username)

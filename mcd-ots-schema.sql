@@ -1,7 +1,3 @@
-CREATE TABLE users (
-    username VARCHAR(25) PRIMARY KEY,
-    password TEXT NOT NULL
-);
 
 CREATE TABLE breakfast (
     id SERIAL PRIMARY KEY,
@@ -83,7 +79,7 @@ CREATE TABLE dessert2 (
     imageSrc TEXT 
 );
 
-CREATE TABLE LSM (
+CREATE TABLE lsm (
     id SERIAL PRIMARY KEY,
     name TEXT UNIQUE NOT NULL,
     sizeable BOOLEAN DEFAULT FALSE,
@@ -131,14 +127,6 @@ CREATE TABLE customers (
     fakeOrder TEXT
 );
 
-CREATE TABLE answers (
-    id INTEGER 
-        REFERENCES customers ON DELETE CASCADE,
-    name TEXT, 
-    count INTEGER, 
-    drinkAlert TEXT    
-);
-
 CREATE TABLE leaderboard (
     id SERIAL PRIMARY KEY,
     username VARCHAR(30),
@@ -146,13 +134,3 @@ CREATE TABLE leaderboard (
     formatted_time TEXT
 );
 
-CREATE TABLE scores (
-    id SERIAL PRIMARY KEY,
-    username VARCHAR(25)
-        REFERENCES users ON DELETE CASCADE,
-    highestScore INTEGER,
-    lowestScore INTEGER,
-    averageScore FLOAT,
-    accuracy FLOAT,
-    ordersCount INTEGER 
-);

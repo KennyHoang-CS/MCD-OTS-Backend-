@@ -7,9 +7,9 @@ const db = require('../db');
 class FoodMenu {
 
     /**
-     * Get all breakfast items. 
+     * Get all food items. 
      * 
-     * Returns [{name, isComboItem, comboItemNumber, imageSrc}, ...]
+     * Returns { items: [{name, isComboItem, comboItemNumber, sizeable, type, not_combo_able, imageSrc}, ...] }
      */
 
     static async getAll(menu) {

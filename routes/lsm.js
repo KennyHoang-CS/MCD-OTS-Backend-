@@ -3,9 +3,10 @@
 const express = require('express');
 const router = new express.Router(); 
 
+// LSM could have its own model, but for now use Dessert model. 
 const Dessert = require('../models/Desserts');
 
-/** Routes for dessert items. */
+/** Routes for LSM items. */
 
 
 /** GET / => 

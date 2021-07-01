@@ -6,7 +6,7 @@ const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
 
-/** Import the routes */
+/** Menu Routes */
 const breakfastRoutes = require('./routes/breakfast');
 const breakfast2Routes = require('./routes/breakfast2');
 const lunchRoutes = require('./routes/lunch');
@@ -22,6 +22,7 @@ const happyMealRoutes = require('./routes/happy-meal');
 const lsmRoutes = require('./routes/lsm');
 const condiments = require('./routes/condiments');
 
+/** Customers and Leaderboard Routes */
 const customerRoutes = require('./routes/customers');
 const leaderboardRoutes = require('./routes/leaderboard');
 

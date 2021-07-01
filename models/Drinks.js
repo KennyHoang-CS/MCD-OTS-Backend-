@@ -2,7 +2,7 @@
 
 const db = require('../db');
 
-/** Related functions for food items. */
+/** Related functions for drink items. */
 
 class Drinks {
 

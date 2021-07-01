@@ -9,7 +9,7 @@ const FoodMenu = require('../models/FoodMenu');
 
 
 /** GET / => 
- *  { items: [ { name, isComboItem, comboItemNumber, imageSrc }, ...]}
+ *  { items: [{name, isComboItem, comboItemNumber, sizeable, type, not_combo_able, imageSrc}, ...] }
  * 
  * 
  *  Authorization required: none 

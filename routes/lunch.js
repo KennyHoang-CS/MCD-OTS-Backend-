@@ -5,11 +5,11 @@ const router = new express.Router();
 
 const FoodMenu = require('../models/FoodMenu');
 
-/** Routes for Breakfast Items. */
+/** Routes for Lunch Items. */
 
 
 /** GET / => 
- *  { items: [ { name, isComboItem, comboItemNumber, imageSrc }, ...]}
+ *  { items: [{name, isComboItem, comboItemNumber, sizeable, type, not_combo_able, imageSrc}, ...] }
  * 
  * 
  *  Authorization required: none 

@@ -31,8 +31,6 @@ class Leaderboard {
 
     static async create(username, time, formattedTime) {
         
-        console.log('FROM CREATE: ', username, time, formattedTime);
-
         // create the query string. 
         let stringToQuery = `INSERT INTO leaderboard (username, time, formatted_time)
                             VALUES ($1, $2, $3)

@@ -121,7 +121,7 @@ FALSE,
 FALSE,
 '/images/mcdonalds-Chicken-McNuggets-Mighty-Kids-Meals.jpg');
 
-INSERT INTO LSM (name, sizeable, imageSrc)
+INSERT INTO lsm (name, sizeable, imageSrc)
 VALUES 
 ('Classic Pack Big Mac',
 FALSE,
