@@ -17,27 +17,27 @@ afterEach(commonAfterEach);
 afterAll(commonAfterAll);
 
 
-/************************ GET /breakfast */
+/************************ GET /breakfast-2 */
 
-describe('GET /breakfast', function () {
+describe('GET /breakfast-2', function () {
 
     test('works', async function () {
-        const resp = await request(app).get('/breakfast');
+        const resp = await request(app).get('/breakfast-2');
         expect(resp.body.items).toEqual([
             {
-                name: 'Egg McMuffin',
+                name: "Saus Biscuit",
                 is_combo_item: true,
-                combo_item_number: '1',
+                combo_item_number: "999",
                 sizeable: false,
-                type: 'Breakfast',
+                type: "Breakfast",
                 not_combo_able: false,
-                imagesrc: '/images/eggMcMuffin.jpg'
+                imagesrc: "/images/sausBis.jpg"
             }
         ])
     });
 
     test("not found for no such breakfast", async function () {
-        const resp = await request(app).get(`/breakfast/nope`);
+        const resp = await request(app).get(`/breakfast-2/nope`);
         expect(resp.statusCode).toEqual(404);
     });
 });

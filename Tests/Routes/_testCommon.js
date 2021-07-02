@@ -18,6 +18,7 @@ async function commonBeforeAll() {
     await db.query('DELETE FROM happy_meals');
     await db.query('DELETE FROM customers');
     await db.query('DELETE FROM leaderboard');
+    await db.query('DELETE FROM condiments');
 
     // insert some data. 
     await db.query(`

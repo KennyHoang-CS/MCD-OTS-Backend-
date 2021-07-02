@@ -17,27 +17,27 @@ afterEach(commonAfterEach);
 afterAll(commonAfterAll);
 
 
-/************************ GET /breakfast */
+/************************ GET /mcvalue */
 
-describe('GET /breakfast', function () {
+describe('GET /mcvalue', function () {
 
     test('works', async function () {
-        const resp = await request(app).get('/breakfast');
+        const resp = await request(app).get('/mcvalue');
         expect(resp.body.items).toEqual([
             {
-                name: 'Egg McMuffin',
-                is_combo_item: true,
-                combo_item_number: '1',
+                name: "McChicken",
+                is_combo_item: false,
+                combo_item_number: '999',
                 sizeable: false,
-                type: 'Breakfast',
-                not_combo_able: false,
-                imagesrc: '/images/eggMcMuffin.jpg'
+                type: 'Lunch',
+                not_combo_able: true,
+                imagesrc: '/images/McChicken.jpg'
             }
         ])
     });
 
-    test("not found for no such breakfast", async function () {
-        const resp = await request(app).get(`/breakfast/nope`);
+    test("not found for no such mcvalue", async function () {
+        const resp = await request(app).get(`/mcvalue/nope`);
         expect(resp.statusCode).toEqual(404);
     });
 });

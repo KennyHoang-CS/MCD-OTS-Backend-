@@ -17,27 +17,23 @@ afterEach(commonAfterEach);
 afterAll(commonAfterAll);
 
 
-/************************ GET /breakfast */
+/************************ GET /lsm */
 
-describe('GET /breakfast', function () {
+describe('GET /lsm', function () {
 
     test('works', async function () {
-        const resp = await request(app).get('/breakfast');
+        const resp = await request(app).get('/lsm');
         expect(resp.body.items).toEqual([
             {
-                name: 'Egg McMuffin',
-                is_combo_item: true,
-                combo_item_number: '1',
+                name: "Classic Pack Big Mac",
                 sizeable: false,
-                type: 'Breakfast',
-                not_combo_able: false,
-                imagesrc: '/images/eggMcMuffin.jpg'
+                imagesrc: "/images/classic-pack-big-mac.jpg"
             }
         ])
     });
 
-    test("not found for no such breakfast", async function () {
-        const resp = await request(app).get(`/breakfast/nope`);
+    test("not found for no such lsm", async function () {
+        const resp = await request(app).get(`/lsm/nope`);
         expect(resp.statusCode).toEqual(404);
     });
 });
