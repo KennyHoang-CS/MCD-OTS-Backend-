@@ -87,7 +87,7 @@
    }
   </code>
 </li> <br>
-<li>Endpoints: customers I.E. customers <br><br>
+<li>Endpoint: customers <br><br>
   <code>
     {
   "items": [
